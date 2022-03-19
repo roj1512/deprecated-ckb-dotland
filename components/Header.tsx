@@ -4,14 +4,14 @@
 import { h } from "../deps.ts";
 
 const entries = [
-  { href: "/manual", content: "Manual" },
-  { href: "https://deno.com/blog", content: "Blog" },
+  { href: "/manual", content: "مانواڵ" },
+  { href: "https://deno.com/blog", content: "بڵۆگ" },
   {
     href: "https://doc.deno.land/deno/stable",
     content: "API",
   },
-  { href: "/std", content: "Standard Library" },
-  { href: "/x", content: "Third Party Modules" },
+  { href: "/std", content: "کتێبخانەی ستاندارد" },
+  { href: "/x", content: "مۆدیوڵەکان" },
 ] as const;
 
 export function Header({
@@ -75,7 +75,7 @@ export function Header({
                       )}
                   </div>
                 </a>{" "}
-                <label class="-mr-2" htmlFor="menuToggle">
+                <label class="-ml-2" htmlFor="menuToggle">
                   <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:(text-gray-500 bg-gray-100) focus:(outline-none bg-gray-100 text-gray-500) transition duration-150 ease-in-out">
                     <svg
                       class="h-6 w-6"
@@ -113,7 +113,7 @@ export function Header({
           </div>
         </div>
         <label
-          class="-mr-2 flex items-center lg:hidden"
+          class="-ml-2 flex items-center lg:hidden"
           htmlFor="menuToggle"
         >
           <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:(text-gray-500 bg-gray-100) focus:(outline-none bg-gray-100 text-gray-500) transition duration-150 ease-in-out">
@@ -123,7 +123,7 @@ export function Header({
               fill="none"
               viewBox="0 0 24 24"
             >
-              <title>Menu | Deno</title>
+              <title>پێڕست | دێنۆ</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -152,7 +152,7 @@ export function Header({
             href="https://github.com/denoland"
             class="ml-10 my-auto text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out leading-0"
           >
-            <span class="sr-only">GitHub</span>
+            <span class="sr-only">گیتهەب</span>
             <svg
               class="h-6 w-6 inline"
               fill="currentColor"
