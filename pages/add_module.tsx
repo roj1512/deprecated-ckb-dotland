@@ -119,7 +119,6 @@ export default function AddModulePage() {
                         const available = await getVersionList(e.target.value)
                           .then((e) => !e)
                           .catch(() => false);
-
                         if (available) {
                           document.getElementById('moduleNameNotAvailable').style.display = 'none';
                           document.getElementById('moduleNameAvailable').style.display = 'block';
@@ -187,17 +186,11 @@ export default function AddModulePage() {
                 </ModuleStep>
                 <ModuleStep title="Add the webhook">
                   <p>You can now add the webhook to your repository.</p>
-<<<<<<< HEAD
-                  <ol class="list-decimal list-outside mr-4 pl-2 ">
-                    <li>Navigate to the repository you want to add.</li>
-                    <li>
-=======
                   <ol class="list-decimal list-outside ml-4 pl-2 ">
                     <li class="mt-1.5">
                       Navigate to the repository you want to add.
                     </li>
                     <li class="mt-1.5">
->>>>>>> o
                       Go to the <InlineCode>Settings</InlineCode> tab.
                     </li>
                     <li class="mt-1.5">
