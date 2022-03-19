@@ -204,21 +204,21 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
           <a class="hover:underline" href="#examples">
             <h3 class="font-bold text-xl" id="examples">
-              Examples
+              نموونەکان
             </h3>
           </a>
           <p class="my-4 text-gray-700">
-            Here are some examples that you can use to get started immediately.
+            ئەمانە هەندێک نموونەن بۆ ئەوەی هاوکار بن لە فێربوونت.
           </p>
           <ol class="ml-8 list-disc text-gray-700">
             <li>
               <a href="https://examples.deno.land/hello-world" class="link">
-                Hello World
+                سڵاو دنیا
               </a>
             </li>
             <li>
               <a href="https://examples.deno.land/import-export" class="link">
-                Importing & Exporting
+                هاوردەکردن & هەناردەکردن
               </a>
             </li>
             <li>
@@ -231,20 +231,21 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
             </li>
             <li>
               <a href="https://examples.deno.land/http-requests" class="link">
-                HTTP Requests
+                داواکاریی HTTP
               </a>
             </li>
             <li>
               <a href="https://examples.deno.land/http-server" class="link">
-                HTTP Server: Hello World
+                ڕاژەی HTTP: سڵاو دنیا
               </a>
             </li>
           </ol>
           <p class="my-4 text-gray-700">
-            For more examples, check out{" "}
+            بۆ نموونەی زۆرتر،{" "}
             <a class="link" href="https://examples.deno.land">
               examples.deno.land
-            </a>.
+            </a>{" "}
+            ببینە.
           </p>
         </div>
         <div class="mt-20">
