@@ -210,7 +210,7 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
           <p class="my-4 text-gray-700">
             ئەمانە هەندێک نموونەن بۆ ئەوەی هاوکار بن لە فێربوونت.
           </p>
-          <ol class="ml-8 list-disc text-gray-700">
+          <ol class="mr-8 list-disc text-gray-700">
             <li>
               <a href="https://examples.deno.land/hello-world" class="link">
                 سڵاو دنیا
