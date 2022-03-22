@@ -32,7 +32,7 @@ export function Header({
       >
         <a class="flex items-center" href="/">
           <img class="h-10 w-auto sm:h-12 my-2" src="/logo.svg" alt="" />
-          <div class="ml-5 flex flex-col justify-center">
+          <div class="mr-5 flex flex-col justify-center">
             {!main &&
               (
                 <div class="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
@@ -63,7 +63,7 @@ export function Header({
                     src="/logo.svg"
                     alt=""
                   />
-                  <div class="ml-5 flex flex-col justify-center">
+                  <div class="mr-5 flex flex-col justify-center">
                     <div class="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
                       دێنۆ
                     </div>
@@ -75,7 +75,7 @@ export function Header({
                       )}
                   </div>
                 </a>{" "}
-                <label class="-ml-2" htmlFor="menuToggle">
+                <label class="-mr-2" htmlFor="menuToggle">
                   <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:(text-gray-500 bg-gray-100) focus:(outline-none bg-gray-100 text-gray-500) transition duration-150 ease-in-out">
                     <svg
                       class="h-6 w-6"
@@ -113,7 +113,7 @@ export function Header({
           </div>
         </div>
         <label
-          class="-ml-2 flex items-center lg:hidden"
+          class="-mr-2 flex items-center lg:hidden"
           htmlFor="menuToggle"
         >
           <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:(text-gray-500 bg-gray-100) focus:(outline-none bg-gray-100 text-gray-500) transition duration-150 ease-in-out">
@@ -133,7 +133,7 @@ export function Header({
             </svg>
           </div>
         </label>
-        <div class="hidden lg:flex md:ml-10 items-end">
+        <div class="hidden lg:flex md:mr-10 items-end">
           <a
             href="https://deno.com/deploy"
             class="font-medium py-2 px-3 rounded-lg border-2 border-gray-700 bg-transparent text-gray-700 hover:border-gray-900 hover:bg-gray-900 hover:text-gray-50 transition duration-150 ease-in-out"
@@ -143,14 +143,14 @@ export function Header({
           {entries.map(({ href, content }) => (
             <a
               href={href}
-              class="ml-10 my-auto font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+              class="mr-10 my-auto font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
             >
               {content}
             </a>
           ))}
           <a
             href="https://github.com/denoland"
-            class="ml-10 my-auto text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out leading-0"
+            class="mr-10 my-auto text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out leading-0"
           >
             <span class="sr-only">گیتهەب</span>
             <svg
