@@ -8,14 +8,21 @@ import { Footer } from "../components/Footer.tsx";
 import { InlineCode } from "../components/InlineCode.tsx";
 import { Header } from "../components/Header.tsx";
 import versions from "../versions.json" assert { type: "json" };
+import { Background } from "../components/HeroBackground.tsx";
 
 export default function Home() {
-  const complexExampleProgram = `import { serve } from "https://deno.land/std@${
-    versions.std[0]
-  }/http/server.ts";
+  const complexExampleProgram =
+    `import { serve } from "https://deno.land/std/http/server.ts";
+serve(req => new Response("Hello World\\n"));`;
 
-console.log("http://localhost:8000/");
-serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
+  const denoTestExample =
+    `deno test https://deno.land/std@0.132.0/testing/chai_example.ts
+running 3 tests from https://deno.land/std@0.132.0/testing/chai_example.ts
+test we can make chai assertions ... ok (8ms)
+test we can make chai expectations ... ok (2ms)
+test we can use chai should style ... ok (4ms)
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms)`;
 
   return (
     <div>
@@ -23,9 +30,10 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
         <title>دێنۆ - ژینگەیەکی مۆدێرن بۆ تایپسکریپت و جاڤاسکریپت</title>
       </Head>
       <div class="bg-white">
-        <div class="bg-gray-50 border-b border-gray-200">
+        <div class="bg-gray-50 overflow-x-hidden border-b border-gray-200 relative">
+          <Background />
           <Header main />
-          <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-20 flex flex-col items-center">
+          <div class="relative max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-20 flex flex-col items-center">
             <h1 class="font-extrabold text-5xl leading-10 tracking-tight text-gray-900">
               دێنۆ
             </h1>
@@ -59,13 +67,19 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
               هتد مەگەر خۆت بهێڵیت.
             </li>
             <li>
-              بەبێ ئەنجامدانی هیچ کارێکی پێشوەختە دەتوانیت تایپسکریپت بەکار
-              بهێنیت.
-            </li>
-            <li>هەموو دێنۆ یەک فایلە.</li>
-            <li>
-              لەناو خۆیدا چەند کەرەستەیەکی تێدایە، بۆ نموونە ڕازێنەرەوەی کۆد (
-              <InlineCode>deno fmt</InlineCode>).
+              لەناو خۆی 
+              <a class="link" href="/manual/tools">
+               چەند کەرەستەیەکی
+              </a>{" "}تێدایە،
+              بۆ نموونە dependency inspector (
+              <a class="link" href="/manual/tools/dependency_inspector">
+                <InlineCode>deno info</InlineCode>
+              </a>
+              ) و ڕازێنەرەوەی کۆد (
+              <a class="link" href="/manual/tools/formatter">
+                <InlineCode>deno fmt</InlineCode>
+              </a>
+              ).
             </li>
             <li>
               چەندین مۆدیوڵی ستانداردی هەیە کە لە گەرەنتیی کارکردنیان هەیە:{" "}
@@ -115,9 +129,11 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
         </div>
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8">
           <p class="my-4 text-gray-700">
-            دەتوانیت بە بەکارهێنانی <a class="link" href="/manual">مانواڵەکە</a>
-            {" "}
-            پێشەکییەکی قوڵتر بخوێنیتەوە و نموونەی زۆرتر ببینیت.
+            دەتوانیت زۆرتر قووڵ بیتەوە و نموونەی زۆرتر ببینیت لە{" "}
+            <a class="link" href="/manual">
+             مانواڵەکە
+            </a>
+            .
           </p>
         </div>
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
@@ -134,9 +150,11 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
             .
           </p>
           <p class="my-4 text-gray-700">
-            دێنۆ <a class="link" href="/manual">مانواڵێکی</a>{" "}
-            هەیە کە بە قووڵی باس لە دێنۆ دەکات و پێشەکییەکت دەربارەی چەمکەکان پێ
-            دەدات.
+            دێنۆ{" "}
+            <a class="link" href="/manual">
+              مانواڵێکی
+            </a>{" "}
+            هەیە کە بابەتەکان بەقووڵی باس دەکات، ڕوونکردنەوە بۆ بەشە جیاوازەکانی دێنۆ دەدات، پێت دەڵێت چۆن دێنۆ بە پڕۆژەکانتەوە بلکێنیت و چۆنیش فراوانی بکەیت بە بەکارهێنانی پێوەکراوی ڕەست.
           </p>
           <p class="my-4 text-gray-700">
             مانواڵەکە باس لە ئەو شتانەش دەکات کە دێنۆ دابینینیان دەکات.
@@ -156,8 +174,11 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
             </a>.
           </p>
           <p class="my-4 text-gray-700">
-            هەروەها لە <a class="link" href="/std">deno.land/std</a>{" "}
-            بڵاو کراونەتەوە وەک هەر مۆدیوڵێکی دیکە.
+            مۆدڵیولە ستانداردەکان بەردەستن لە{" "}
+            <a class="link" href="/std">
+              deno.land/std
+            </a>{" "}
+            و بە بەستەرەکانیان دەتوانن بەکار بهێنرێن، وەک هەر مۆدیوڵێکی تری ES.
           </p>
         </div>
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
@@ -187,18 +208,79 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
             .
           </p>
           <p class="my-4 text-gray-700">
-            بۆ ئاسانکردنی بەکارهێنانی مۆدیوڵەکان، دێنۆ چەند کەرەستەیەکی
-            لەگەڵدایە وەک <InlineCode>deno info</InlineCode> و{" "}
-            <InlineCode>deno doc</InlineCode>. هەروەها deno.land ڕووکارێکی
-            تێدایە بۆ بینینی نووسراوی مۆدیوڵەکان. کە لە{" "}
+            بۆ ئەوەی بەکارهێنانی مۆدیوڵەکانی تر ئاسان بێت، دێنۆ لەناو خۆیدا چەند کەرەستەیەکی سوودبەخشی تێدایە وەک
+            {" "}
+            <a class="link" href="/manual/tools/dependency_inspector">
+              <InlineCode>deno info</InlineCode>
+            </a>{" "}
+            و{" "}
+            <a class="link" href="/manual/tools/documentation_generator">
+              <InlineCode>deno doc</InlineCode>
+            </a>
+            . deno.landـیش بەشێکی تێدایە کە نووسراوی مۆدیوڵەکانت نیشان دەدات.
+            لە{" "}
             <a href="https://doc.deno.land" class="link">
               doc.deno.land
             </a>{" "}
             بەردەستە.
           </p>
           <p class="my-4 text-gray-700">
-            deno.land خزمەتگوزارییەکی بڵاوکردنەوەی گشتیشی تێدایە:{" "}
-            <a class="link" href="/x">deno.land/x</a>.
+            deno.land خزمەتگوزارییەکی بڵاوکردنەوەی گشتیشی تێدایە کە لە{" "}
+            <a class="link" href="/x">
+              deno.land/x
+            </a>
+            بەردەستە.
+          </p>
+        </div>
+        <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+          <a class="hover:underline" href="#toolchain">
+            <h3 class="font-bold text-xl" id="toolchain">
+              Built-in Toolchain
+            </h3>
+          </a>
+          <p class="my-4 text-gray-700">
+            Deno comes with a robust{" "}
+            <a class="link" href="/manual/tools">
+              set of tools
+            </a>
+            , so you can spend less time searching and evaluating third party
+            modules, and more time writing code and being productive. Here are a
+            few examples.
+          </p>
+          <p class="my-4 text-gray-700">
+            <a class="link" href="/manual/tools/linter">
+              Lint
+            </a>{" "}
+            all JS/TS files in the current directory and subdirectories:
+          </p>
+          <p>
+            <CodeBlock code={"deno lint\nChecked 54 files"} language="bash" />
+          </p>
+          <p class="my-4 text-gray-700">
+            <a class="link" href="/manual/tools/formatter">
+              Format
+            </a>{" "}
+            all supported files in the current directory and subdirectories:
+          </p>
+          <p>
+            <CodeBlock code={"deno fmt\nChecked 46 files"} language="bash" />
+          </p>
+          <p class="my-4 text-gray-700">
+            Run a{" "}
+            <a class="link" href="/manual/tools/testing">
+              test
+            </a>
+            :
+          </p>
+          <p>
+            <CodeBlock code={denoTestExample} language="bash" />
+          </p>
+          <p class="my-4 text-gray-700">
+            For the full list of tools and their options, see{" "}
+            <a href="/manual/tools" class="link">
+              here
+            </a>
+            .
           </p>
         </div>
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
@@ -244,14 +326,64 @@ serve((req) => new Response("Hello World\\n"), { port: 8000 });`;
             بۆ نموونەی زۆرتر،{" "}
             <a class="link" href="https://examples.deno.land">
               examples.deno.land
-            </a>{" "}
-            ببینە.
+            </a>
+            .
           </p>
         </div>
+        <DenoInProductionSection />
         <div class="mt-20">
           <Footer simple />
         </div>
       </div>
+    </div>
+  );
+}
+
+function DenoInProductionSection() {
+  const companies = [{
+    name: "Slack",
+    logo: "slack.svg",
+    url: "https://slack.com",
+  }, {
+    name: "Netlify",
+    logo: "netlify.svg",
+    url: "https://netlify.com",
+  }, {
+    name: "GitHub",
+    logo: "github.svg",
+    url: "https://github.com",
+  }, {
+    name: "Supabase",
+    logo: "supabase.svg",
+    url: "https://supabase.com",
+  }];
+
+  return (
+    <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+      <a class="hover:underline" href="#deno-in-production">
+        <h3 class="font-bold text-xl" id="deno-in-production">
+          Deno in Production
+        </h3>
+      </a>
+      <ol class="pl-1 md:pl-0 md:flex flex-wrap gap-8 mt-5 list-none">
+        {companies.map(({ name, logo, url }) => (
+          <li class="mb-2 md:mb-0" key={url}>
+            <a
+              class="flex items-center gap-2 flex-nowrap opacity-70 hover:opacity-100"
+              href={url}
+              target="_blank"
+            >
+              <img
+                class="w-5"
+                src={`https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/${logo}`}
+                alt={name}
+                title={name}
+              />{" "}
+              <span class="font-medium text-lg">{name}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
     </div>
   );
 }
