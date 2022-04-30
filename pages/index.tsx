@@ -362,7 +362,7 @@ function DenoInProductionSection() {
     <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
       <a class="hover:underline" href="#deno-in-production">
         <h3 class="font-bold text-xl" id="deno-in-production">
-          Deno in Production
+          دێنۆ لە کاردا
         </h3>
       </a>
       <ol class="pl-1 md:pl-0 md:flex flex-wrap gap-8 mt-5 list-none">
