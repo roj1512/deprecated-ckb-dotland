@@ -167,11 +167,11 @@ export default function ThirdPartyRegistryList({ url }: PageProps) {
               <div>
                 <div>
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                  چۆن مۆدیوڵەکانی ناو deno.land/x بەکار دێن؟
+                    چۆن مۆدیوڵەکانی ناو deno.land/x بەکار دێن؟
                   </dt>
                   <dd class="mt-2">
                     <p class="text-base leading-6 text-gray-500 break-words">
-                    دەتوانیت مۆدیوڵەکان هاوردە بکەیت لە ڕێی بەستەرێکی لەم
+                      دەتوانیت مۆدیوڵەکان هاوردە بکەیت لە ڕێی بەستەرێکی لەم
                       شێوەیە:<InlineCode>
                         https://deno.land/x/IDENTIFIER@VERSION/FILE_PATH
                       </InlineCode>
@@ -182,34 +182,35 @@ export default function ThirdPartyRegistryList({ url }: PageProps) {
                 </div>
                 <div class="mt-12">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                  دەتوانم لە ڕێی مۆدیوڵەکانی ئێرە ئەرکی دێنۆ بگۆڕم؟
+                    دەتوانم لە ڕێی مۆدیوڵەکانی ئێرە ئەرکی دێنۆ بگۆڕم؟
                   </dt>
                   <dd class="mt-2">
                     <p class="text-base leading-6 text-gray-500">
-                    نا، نووسراو دەربارەی ژینگەی دێنۆ خۆی لە{" "}
+                      نا، نووسراو دەربارەی ژینگەی دێنۆ خۆی لە{" "}
                       <a class="link" href="https://doc.deno.land/">
                         ئێرە
                       </a>{" "}
-                      و ناو مانواڵەکەیە.{" "}
-                      <a href="/std" class="link">/std</a>{" "}
+                      و ناو مانواڵەکەیە. <a href="/std" class="link">/std</a>
+                      {" "}
                       ببینە بۆ مۆدیوڵە ستانداردەکان.
                     </p>
                   </dd>
                 </div>
                 <div class="mt-12">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                  چۆن دەتوانم مۆدیوڵێکی خۆم لە deno.land/x دابنێم؟      
-                              </dt>
+                    چۆن دەتوانم مۆدیوڵێکی خۆم لە deno.land/x دابنێم؟
+                  </dt>
                   <dd class="mt-2">
                     <p class="text-base leading-6 text-gray-500 break-words">
-                    ئەو دوگمەیەی خوارەوە بکە و ڕێنماییەکان بخوێنەوە:
+                      ئەو دوگمەیەی خوارەوە بکە و ڕێنماییەکان بخوێنەوە:
                     </p>
                     <span class="block w-full rounded-md shadow-sm mt-4">
                       <a
                         href="/add_module"
                         class="w-full flex justify-center py-2 px-4 border border-gray-300 text-md font-medium rounded-md text-gray-700 bg-gray-100 hover:text-gray-500 hover:bg-gray-50 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition duration-150 ease-in-out"
                       >
-                        مۆدیوڵێک بڵاو بکەرەوە                      </a>
+                        مۆدیوڵێک بڵاو بکەرەوە
+                      </a>
                     </span>
                   </dd>
                 </div>
@@ -225,7 +226,7 @@ export default function ThirdPartyRegistryList({ url }: PageProps) {
                   </dt>
                   <dd class="mt-2">
                     <p class="text-base leading-6 text-gray-500">
-                    deno.land/x ئاگادارت دەکاتەوە کاتێک خۆی نوێترین وەشانی
+                      deno.land/x ئاگادارت دەکاتەوە کاتێک خۆی نوێترین وەشانی
                       مۆدیوڵێکت بۆ هەڵدەبژێرێت کاتێک لە کاتی هاوردەکردنی
                       مۆدیوڵێک وەشانەکەی دیاری ناکەیت. بۆ لابردنی ئەم
                       ئاگادارکردنەوەیە، تەنیا وەشانی مۆدیوڵەکە دیاری بکە.
@@ -234,11 +235,11 @@ export default function ThirdPartyRegistryList({ url }: PageProps) {
                 </div>
                 <div class="mt-12">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                  دەتوانم دەستکاریی مۆدیوڵەکانی ناو deno.land/x بکەم یان
+                    دەتوانم دەستکاریی مۆدیوڵەکانی ناو deno.land/x بکەم یان
                   </dt>
                   <dd class="mt-2">
                     <p class="text-base leading-6 text-gray-500">
-                    وەشانی مۆدیوڵەکان نەگۆڕن و ناتوانرێ دەستکاری بکرێن. بەڵام
+                      وەشانی مۆدیوڵەکان نەگۆڕن و ناتوانرێ دەستکاری بکرێن. بەڵام
                       لەوانەیە مۆدیوڵێک لاببرێت ئەگەر لەبەر هۆکارێکی یاسایی بێت،
                       بۆ نموونە مافی لەبەرگرتنەوە.
                     </p>

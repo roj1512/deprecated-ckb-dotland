@@ -67,11 +67,11 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
               هتد مەگەر خۆت بهێڵیت.
             </li>
             <li>
-              لەناو خۆی 
+              لەناو خۆی
               <a class="link" href="/manual/tools">
-               چەند کەرەستەیەکی
-              </a>{" "}تێدایە،
-              بۆ نموونە dependency inspector (
+                چەند کەرەستەیەکی
+              </a>{" "}
+              تێدایە، بۆ نموونە dependency inspector (
               <a class="link" href="/manual/tools/dependency_inspector">
                 <InlineCode>deno info</InlineCode>
               </a>
@@ -131,7 +131,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
           <p class="my-4 text-gray-700">
             دەتوانیت زۆرتر قووڵ بیتەوە و نموونەی زۆرتر ببینیت لە{" "}
             <a class="link" href="/manual">
-             مانواڵەکە
+              مانواڵەکە
             </a>
             .
           </p>
@@ -154,7 +154,9 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             <a class="link" href="/manual">
               مانواڵێکی
             </a>{" "}
-            هەیە کە بابەتەکان بەقووڵی باس دەکات، ڕوونکردنەوە بۆ بەشە جیاوازەکانی دێنۆ دەدات، پێت دەڵێت چۆن دێنۆ بە پڕۆژەکانتەوە بلکێنیت و چۆنیش فراوانی بکەیت بە بەکارهێنانی پێوەکراوی ڕەست.
+            هەیە کە بابەتەکان بەقووڵی باس دەکات، ڕوونکردنەوە بۆ بەشە جیاوازەکانی
+            دێنۆ دەدات، پێت دەڵێت چۆن دێنۆ بە پڕۆژەکانتەوە بلکێنیت و چۆنیش
+            فراوانی بکەیت بە بەکارهێنانی پێوەکراوی ڕەست.
           </p>
           <p class="my-4 text-gray-700">
             مانواڵەکە باس لە ئەو شتانەش دەکات کە دێنۆ دابینینیان دەکات.
@@ -208,8 +210,8 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             .
           </p>
           <p class="my-4 text-gray-700">
-            بۆ ئەوەی بەکارهێنانی مۆدیوڵەکانی تر ئاسان بێت، دێنۆ لەناو خۆیدا چەند کەرەستەیەکی سوودبەخشی تێدایە وەک
-            {" "}
+            بۆ ئەوەی بەکارهێنانی مۆدیوڵەکانی تر ئاسان بێت، دێنۆ لەناو خۆیدا چەند
+            کەرەستەیەکی سوودبەخشی تێدایە وەک{" "}
             <a class="link" href="/manual/tools/dependency_inspector">
               <InlineCode>deno info</InlineCode>
             </a>{" "}
@@ -217,8 +219,8 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             <a class="link" href="/manual/tools/documentation_generator">
               <InlineCode>deno doc</InlineCode>
             </a>
-            . deno.landـیش بەشێکی تێدایە کە نووسراوی مۆدیوڵەکانت نیشان دەدات.
-            لە{" "}
+            . deno.landـیش بەشێکی تێدایە کە نووسراوی مۆدیوڵەکانت نیشان دەدات. لە
+            {" "}
             <a href="https://doc.deno.land" class="link">
               doc.deno.land
             </a>{" "}
@@ -235,40 +237,39 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
         <div class="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
           <a class="hover:underline" href="#toolchain">
             <h3 class="font-bold text-xl" id="toolchain">
-              Built-in Toolchain
+              کەرەستەکان
             </h3>
           </a>
           <p class="my-4 text-gray-700">
-            Deno comes with a robust{" "}
+            دێنۆ لەناو خۆیدا{" "}
             <a class="link" href="/manual/tools">
-              set of tools
+              چەند کەرەستەیەک
             </a>
-            , so you can spend less time searching and evaluating third party
-            modules, and more time writing code and being productive. Here are a
-            few examples.
+            ـی تێدایە، بۆ ئەوەی کاتت بۆ بگەڕێنێتەوە و ماندوو نەبیت بە گەڕان بۆ
+            مۆدیوڵی دەرەکی بۆ ئەنجامدانی کارە پێویستەکان. ئەمانە هەندێک نموونەن.
           </p>
           <p class="my-4 text-gray-700">
+            هەموو فایلە JS/TSـەکان
             <a class="link" href="/manual/tools/linter">
-              Lint
-            </a>{" "}
-            all JS/TS files in the current directory and subdirectories:
+              لینت بکە
+            </a>:
           </p>
           <p>
             <CodeBlock code={"deno lint\nChecked 54 files"} language="bash" />
           </p>
           <p class="my-4 text-gray-700">
+            هەموو فایلە JS/TSـەکان
             <a class="link" href="/manual/tools/formatter">
-              Format
-            </a>{" "}
-            all supported files in the current directory and subdirectories:
+              بڕازێنەوە
+            </a>
           </p>
           <p>
             <CodeBlock code={"deno fmt\nChecked 46 files"} language="bash" />
           </p>
           <p class="my-4 text-gray-700">
-            Run a{" "}
+            کۆدەکانت{" "}
             <a class="link" href="/manual/tools/testing">
-              test
+              تاقی بکەوە
             </a>
             :
           </p>
@@ -276,9 +277,9 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             <CodeBlock code={denoTestExample} language="bash" />
           </p>
           <p class="my-4 text-gray-700">
-            For the full list of tools and their options, see{" "}
+            بۆ فێربوونی زیاتر ئەمانە، بڕوانە{" "}
             <a href="/manual/tools" class="link">
-              here
+              ئێرە
             </a>
             .
           </p>
