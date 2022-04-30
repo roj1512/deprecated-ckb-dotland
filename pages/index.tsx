@@ -143,7 +143,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             </h3>
           </a>
           <p class="my-4 text-gray-700">
-            The basic runtime documentation for Deno can be found on{" "}
+            نووسراوێکی سادەی ژینگەی دێنۆ بەردەستە لە{" "}
             <a href="https://doc.deno.land/deno/stable" class="link">
               doc.deno.land
             </a>
@@ -230,7 +230,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             deno.land خزمەتگوزارییەکی بڵاوکردنەوەی گشتیشی تێدایە کە لە{" "}
             <a class="link" href="/x">
               deno.land/x
-            </a>
+            </a>{" "}
             بەردەستە.
           </p>
         </div>
@@ -243,13 +243,13 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
           <p class="my-4 text-gray-700">
             دێنۆ لەناو خۆیدا{" "}
             <a class="link" href="/manual/tools">
-              چەند کەرەستەیەک
-            </a>
-            ـی تێدایە، بۆ ئەوەی کاتت بۆ بگەڕێنێتەوە و ماندوو نەبیت بە گەڕان بۆ
+              چەند کەرەستەیەکی
+            </a>{" "}
+            تێدایە، بۆ ئەوەی کاتت بۆ بگەڕێنێتەوە و ماندوو نەبیت بە گەڕان بۆ
             مۆدیوڵی دەرەکی بۆ ئەنجامدانی کارە پێویستەکان. ئەمانە هەندێک نموونەن.
           </p>
           <p class="my-4 text-gray-700">
-            هەموو فایلە JS/TSـەکان
+            هەموو فایلە JS/TSـەکان{" "}
             <a class="link" href="/manual/tools/linter">
               لینت بکە
             </a>:
@@ -258,7 +258,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             <CodeBlock code={"deno lint\nChecked 54 files"} language="bash" />
           </p>
           <p class="my-4 text-gray-700">
-            هەموو فایلە JS/TSـەکان
+            هەموو فایلە JS/TSـەکان{" "}
             <a class="link" href="/manual/tools/formatter">
               بڕازێنەوە
             </a>
@@ -327,8 +327,8 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (27ms
             بۆ نموونەی زۆرتر،{" "}
             <a class="link" href="https://examples.deno.land">
               examples.deno.land
-            </a>
-            .
+            </a>{" "}
+            ببینە.
           </p>
         </div>
         <DenoInProductionSection />
